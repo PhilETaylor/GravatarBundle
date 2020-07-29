@@ -14,8 +14,8 @@
     }],
     "require": {
         "php": ">=5.3.0",
-        "symfony/framework-bundle" : "~4.0|~3.0|~2.3",
-        "symfony/templating": "~4.0|~3.0|~2.0"
+        "symfony/framework-bundle" : "~5|~4.0|~3.0|~2.3",
+        "symfony/templating": "~5|~4.0|~3.0|~2.0"
     },
     "require-dev": {
         "twig/extensions": "1.0.*",
