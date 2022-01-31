@@ -20,10 +20,6 @@ class GravatarExtensionTest extends TestCase
 
     public function setUp()
     {
-        if (!class_exists('Twig_Extension')) {
-            $this->markTestSkipped('Twig_Extension cannot be found');
-        }
-
         $this->helper = $this->createMock('Ornicar\GravatarBundle\Templating\Helper\GravatarHelperInterface');
         $this->extension = new GravatarExtension($this->helper);
     }
@@ -48,7 +44,7 @@ class GravatarExtensionTest extends TestCase
 
     public function testFunctions()
     {
-        $this->assertContainsOnlyInstancesOf('\Twig_SimpleFunction', $this->extension->getFunctions());
+        $this->assertContainsOnlyInstancesOf('\Twig\TwigFunction', $this->extension->getFunctions());
 
         $expectedNames = array(
             'gravatar',
