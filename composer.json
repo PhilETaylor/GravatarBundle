@@ -14,12 +14,12 @@
     }],
     "require": {
         "php": ">=5.3.0",
-        "symfony/framework-bundle" : "~5|~4.0|~3.0|~2.3",
-        "symfony/templating": "~5|~4.0|~3.0|~2.0"
+        "symfony/framework-bundle" : "*",
+        "symfony/templating": "*"
     },
     "require-dev": {
-        "twig/extensions": "1.0.*",
-        "symfony/phpunit-bridge": "~2.7"
+        "twig/extensions": "*",
+        "symfony/phpunit-bridge": "*"
     },
     "suggest" : {
         "twig/twig" : "For gravatar twig extension usage"
