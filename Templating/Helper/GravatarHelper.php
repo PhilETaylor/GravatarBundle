@@ -4,7 +4,6 @@ namespace Ornicar\GravatarBundle\Templating\Helper;
 
 use Ornicar\GravatarBundle\GravatarApi;
 use Symfony\Component\Routing\RouterInterface;
-use Symfony\Component\Templating\Helper\Helper;
 
 /**
  * Symfony 2 Helper for Gravatar. Uses Bundle\GravatarBundle\GravatarApi.
@@ -12,7 +11,7 @@ use Symfony\Component\Templating\Helper\Helper;
  * @author Thibault Duplessis
  * @author Henrik Bjornskov <henrik@bearwoods.dk>
  */
-class GravatarHelper extends Helper implements GravatarHelperInterface
+class GravatarHelper implements GravatarHelperInterface
 {
     /**
      * @var Ornicar\GravatarBundle\GravatarApi
