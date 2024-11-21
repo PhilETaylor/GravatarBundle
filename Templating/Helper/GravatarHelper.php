@@ -29,7 +29,7 @@ class GravatarHelper implements GravatarHelperInterface
      * @param GravatarApi $api
      * @param RouterInterface|null $router
      */
-    public function __construct(GravatarApi $api, RouterInterface $router = null)
+    public function __construct(GravatarApi $api, null|RouterInterface $router)
     {
         $this->api = $api;
         $this->router = $router;
